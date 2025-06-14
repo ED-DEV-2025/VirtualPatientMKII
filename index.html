@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VirtualPatientMKII - Designer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    label, input, button { display: block; margin-top: 1em; }
+  </style>
+</head>
+<body>
+  <h1>VirtualPatientMKII</h1>
+  <p>Upload a patient case JSON to begin. Download <a href="caseTemplate.json" download>caseTemplate.json</a> to create a new case.</p>
+
+  <label>Patient Case File:
+    <input type="file" id="caseFile" accept="application/json">
+  </label>
+
+  <label>OpenAI API Key:
+    <input type="password" id="apiKey">
+  </label>
+
+  <button id="startBtn">Start Simulation</button>
+
+  <script src="script.js"></script>
+  <script>
+    if (typeof initIndexPage === 'function') initIndexPage();
+  </script>
+</body>
+</html>

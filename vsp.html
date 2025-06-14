@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VirtualPatientMKII - Learner</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    #chat { border: 1px solid #ccc; padding: 1em; height: 60vh; overflow-y: auto; }
+    .msg { margin-bottom: 1em; }
+    .user { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Virtual Simulated Patient</h1>
+  <div id="chat"></div>
+  <input type="text" id="userInput" placeholder="Type your message" style="width:80%;">
+  <button id="sendBtn">Send</button>
+
+  <script src="script.js"></script>
+  <script>
+    if (typeof initVspPage === 'function') initVspPage();
+  </script>
+</body>
+</html>
